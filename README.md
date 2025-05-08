@@ -12,7 +12,6 @@ This is my VSCode-inspired **Neovim** setup — it's meant to be pretty simple, 
 - 📁 **File explorer**: [Telescope file browser](https://github.com/nvim-telescope/telescope-file-browser.nvim)
 - 🔍 **Fuzzy finding**: Project-wide search with Telescope
 - 💡 **LSP support**: Rust, TypeScript, React (via tsserver), Ruby
-- 🤖 **AI completions** (*because we love vibe-coding /s*): [Codeium](https://codeium.com/)
 - ⌨️ **VSCode-style keybindings**: Familiar and efficient
 - 🔧 Modular config: Easy to extend and maintain
 
@@ -58,7 +57,6 @@ nvim
 | File browser     | `CTRL + B`    |
 | File search      | `CTRL + P`    |
 | Project search   | `CTRL + F`    |
-| AI suggestion    | `Ctrl-Space`  |
 | Format buffer    | `Leader + =`  |
 
 ---
