@@ -1,4 +1,4 @@
-# 🖤 zeph's neovim config
+# 🌠 zeph's neovim config
 
 This is my VSCode-inspired **Neovim** setup — it's meant to be pretty simple, while still being fast, pretty, and absolutely opinionated to the very core for my development workflow.
 
