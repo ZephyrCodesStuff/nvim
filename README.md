@@ -2,7 +2,7 @@
 
 This is my VSCode-inspired **Neovim** setup — it's meant to be pretty simple, while still being fast, pretty, and absolutely opinionated to the very core for my development workflow.
 
-> ⚙️ Built with [lazy.nvim](https://github.com/folke/lazy.nvim), Telescope, LSP, Codeium, and so many more amazing plugins.
+> ⚙️ Built with [lazy.nvim](https://github.com/folke/lazy.nvim), Telescope, LSP, Lualine, and so many more amazing plugins.
 
 ---
 
