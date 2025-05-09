@@ -11,21 +11,23 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   { "nvim-lualine/lualine.nvim" },
-  {
-    "nvim-telescope/telescope-file-browser.nvim",
-    dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
-  },
   { "nvim-tree/nvim-web-devicons" },
   { "onsails/lspkind.nvim" },
-  { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
-  { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+  {
+    "ibhagwan/fzf-lua",
+    -- optional for icon support
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    -- or if using mini.icons/mini.nvim
+    -- dependencies = { "echasnovski/mini.icons" },
+    opts = {}
+  },
   { "neovim/nvim-lspconfig" },
   {
     "pmizio/typescript-tools.nvim",
     dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
     opts = {},
   },
-  { "williamboman/mason.nvim" },
+  { "williamboman/mason.nvim", dependencies = { 'mason-org/mason-registry' } },
   { "williamboman/mason-lspconfig.nvim" },
   {
       "saghen/blink.cmp",
@@ -86,7 +88,7 @@ require("lazy").setup({
 })
 
 require("plugins.ui")
-require("plugins.telescope")
 require("plugins.lsp")
 require("plugins.ai")
+
 

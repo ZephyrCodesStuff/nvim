@@ -1,18 +1,16 @@
-# 🖤 zeph's neovim config
+# 🌠 zeph's Neovim config
 
 This is my VSCode-inspired **Neovim** setup — it's meant to be pretty simple, while still being fast, pretty, and absolutely opinionated to the very core for my development workflow.
 
-> ⚙️ Built with [lazy.nvim](https://github.com/folke/lazy.nvim), Telescope, LSP, Codeium, and so many more amazing plugins.
+> ⚙️ Built with [lazy.nvim](https://github.com/folke/lazy.nvim), Telescope, LSP, Lualine, and so many more amazing plugins.
 
 ---
 
 ## ✨ Features
 
 - 🎨 **Pretty UI**: [tokyonight.nvim](https://github.com/folke/tokyonight.nvim), [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
-- 📁 **File explorer**: [Telescope file browser](https://github.com/nvim-telescope/telescope-file-browser.nvim)
-- 🔍 **Fuzzy finding**: Project-wide search with Telescope
+- 📁 **File explorer** and **fuzzy search**: [FzfLua](https://github.com/ibhagwan/fzf-lua)
 - 💡 **LSP support**: Rust, TypeScript, React (via tsserver), Ruby
-- 🤖 **AI completions** (*because we love vibe-coding /s*): [Codeium](https://codeium.com/)
 - ⌨️ **VSCode-style keybindings**: Familiar and efficient
 - 🔧 Modular config: Easy to extend and maintain
 
@@ -21,12 +19,11 @@ This is my VSCode-inspired **Neovim** setup — it's meant to be pretty simple, 
 ## 📦 Plugin Highlights
 
 | Plugin                          | Purpose                         |
-|----------------------------------|----------------------------------|
+|---------------------------------|---------------------------------|
 | `lazy.nvim`                     | Plugin manager                  |
 | `tokyonight.nvim`               | Theme                           |
 | `lualine.nvim`                  | Statusline                      |
-| `telescope.nvim`                | Fuzzy finder                    |
-| `telescope-file-browser.nvim`   | File browser                    |
+| `fzf-lua`                       | File browser and fuzzy search   |
 | `nvim-treesitter`               | Rich syntax highlighting        |
 | `mason.nvim` + `lspconfig`      | LSP server install & config     |
 | `nvim-web-devicons`             | File icons                      |
@@ -58,7 +55,6 @@ nvim
 | File browser     | `CTRL + B`    |
 | File search      | `CTRL + P`    |
 | Project search   | `CTRL + F`    |
-| AI suggestion    | `Ctrl-Space`  |
 | Format buffer    | `Leader + =`  |
 
 ---
