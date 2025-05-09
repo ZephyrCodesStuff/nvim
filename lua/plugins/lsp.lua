@@ -16,14 +16,17 @@ lspconfig.yamlls.setup({
 require("mason").setup()
 require("mason-lspconfig").setup({
   ensure_installed = {
-    "rust_analyzer",
-    "ts_ls",
-    "solargraph",
+    "rust_analyzer", -- Rust
+    "ts_ls",         -- TypeScript
+    "solargraph",    -- Ruby
+    "clangd",        -- C / C++
     "yamlls",        -- YAML
     "dockerls",      -- Dockerfile
     "marksman",      -- Markdown
     "taplo",         -- TOML
     "bashls",        -- .env files
+    "ruff",          -- Python formatting
+    "basedpyright"   -- Python LSP
   },
 })
 
